@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "../style.html" %}
+    {% include "./sidebar.html" %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from TXT | Text Summary | Atom State</title>
+    <main class="col-lg-9">
+        <h2 class="text-center">from TXT | Text Summary | Atom State</h2>
+
+        <hr>
+        <form action="upload_TXT" method="post" class="container card p-2" enctype="multipart/form-data">
+            {%csrf_token%}
+            <br>
+            <h3>Choose file to upload</h3>
+            <br>
+
+            <input class="form-control my-2" type="file" name="filetxt" accept="text/plain" />
+
+
+            <input type="submit" name="submit" value="summarize" class="btn btn-primary col-md-3" />
+            <br>
+        </form>
+    </main>
+    </div>
+    </section>
+
+    </div>
+
+    </body>
+
+</html>

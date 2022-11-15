@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "../style.html" %}
+    {% include "./sidebar.html" %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary| Text Summary | Atom State</title>
+    <main class="col-lg-9">
+        <h2 class="text-center">Summary| Text Summary | Atom State</h2>
+
+        <hr>
+
+        <form class="col-md-12 row" action="post_twitter" method="post">
+            {%csrf_token%}
+            <div class="col-md-6">
+                <label for="summary"><b>Summarized Text : </b></label>
+                <textarea class="form-control" name="summary" rows="10" readonly>
+                    {{summary}}
+                </textarea>
+            </div>
+            <div class="col-md-6 row">
+                <div class="col-md-6">
+                    <label for="author"><b>Autor Name :</b></label>
+                    <input type="text" id="author" name="author" value="{{AutorName}}" readonly />
+                    <label for="char_count"><b>Charector Count:</b></label>
+                    <input type="text" id="char_count" name="char_count" value="{{char_count}}" readonly />
+                    <label for="word_count"><b>Word Count:</b></label>
+                    <input type="text" id="word_count" name="word_count" value="{{word_count}}" readonly />
+
+                    <button type="submit" name="tweet" id="tweet_btn" class="m-2 btn btn-primary"><i
+                            class="fa-brands fa-twitter"></i> Tweet</button>
+
+                </div>
+        </form>
+
+    </main>
+    </div>
+    </section>
+
+    </div>
+
+    </body>
+
+</html>

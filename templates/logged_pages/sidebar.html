@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="container">
+
+    <section class="section-content py-3">
+        <div class="row">
+            <aside class="col-lg-3">
+                <!-- ============= COMPONENT ============== -->
+                <nav class="sidebar card py-2 mb-4">
+                    <ul class="nav flex-column" id="nav_accordion">
+                        <li class="nav-item">
+                            <img class="nav-item p-1" src="/static/assets/imgs/user.png" height="99px" />
+                            Welcome, {{userName}}
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.atomstate.com/"> <i class="fa-solid fa-globe"></i>
+                                Company Website </a>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link" href="#"> Text summarize <i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link" href="upload_URL"><i class="fa-solid fa-link"></i> from URL </a>
+                                </li>
+                                <li><a class="nav-link" href="upload_PDF"><i class="fa-solid fa-file-pdf"></i> from PDF
+                                    </a></li>
+                                <li><a class="nav-link" href="upload_DOCX"><i class="fa-solid fa-file-word"></i> from
+                                        DOCX </a> </li>
+                                <li><a class="nav-link" href="upload_TXT"><i class="fa-solid fa-font"></i> from TXT </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link" href="#"> Twitter <i class="fa-solid fa-hashtag"></i> </a>
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i> New Tweet </a>
+                                </li>
+                                <li><a class="nav-link" href="#"><i class="fa-solid fa-list"></i> My Tweets </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link" href="#">Instagram <i class="fa-brands fa-instagram"></i></a>
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link" href="#">Test</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- ============= COMPONENT END// ============== -->
+            </aside>
+
+            <style>
+                .nav-item {
+                    padding-left: 5px !important;
+                }
+            </style>
